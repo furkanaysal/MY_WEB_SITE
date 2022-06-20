@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+
+    <style>
+        head {
+            font-size: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 30px 7%;
+            background-color: #51557E;
+        }  
+        
+        .container {
+            background-color: #1B2430;
+            border-radius: 3rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .links ul li {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+        }
+
+        
+
+        .links ul li a:not(.active){
+            color: #D6D5A8;
+            opacity: 0.8;
+        }
+
+        .links ul li a:not(.active):hover{
+            border-bottom: 1px solid #D6D5A8;
+        }
+
+        .active {
+            color: #fff;
+            border-bottom: 1px solid #816797;
+        }
+
+        .nav-items a{
+            font-size: 2rem;
+            color: #D6D5A8;
+        }
+
+        .nav-items {
+            margin: 0 1.5rem;
+        }
+
+        /* content */
+
+        .content {
+            width: 100%;
+            background-color: #DBDFFD;
+            border-radius: 30rem;
+        }
+
+        .section-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 3rem;
+            margin: 2rem;
+        }
+
+        .section-content .img {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .section-content .img {
+            width: 20rem;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        .img {
+            margin-right: 20px;
+        }
+
+        .section-content h2 {
+            margin-right: 20px;   
+            font-style: bolder;
+        }
+
+        .section-content .img:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .section-content p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        @keyframes h2 {
+            
+        }
+
+        /* main */
+
+        .main {
+            background: url('../../../Downloads/turntable-g7b6503602_1920.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 2rem;
+            background-size: cover;
+            margin: 5rem 5rem;
+        }
+
+        .main-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 2rem;
+        }
+
+        .main-content * {
+            z-index: 50;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 2rem;
+            position: relative;
+            color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border-radius: 2rem;
+        }
+
+        .main ul {
+            list-style: none;
+
+        }
+
+        .code {
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .music {
+            font-style: italic;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+
+
+        <!-- heading -->
+    
+        <header id="home" class="container">
+            <div class="navbar">
+                <div class="nav-items">
+                    <a href="index.html"><i class="fa-solid fa-music"></i> furkanaysal</a>
+                </div>
+                <nav class="links">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- content -->
+
+        <section id="content" class="content">
+            <div class="section-content">
+                <img src="../../../Downloads/198928528_323611729830179_3424184208335024494_n.jpeg" class="img" alt="">
+                <h2 class="animate__animated animate__bounce">FURKANAYSAL</h2>
+                <p>Music Producer & Front-End Developer</p>
+            </div>
+        </section>
+
+        <!-- main -->
+
+        <section class="main">
+            <div class="main-items">
+                <div class="main-content">
+                    <ul class="code">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                    <ul class="music">
+                        <ul>
+                            <li>BEAT</li>
+                            <li>MIX</li>
+                            <li>MASTERING</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+</body>
+</html>
